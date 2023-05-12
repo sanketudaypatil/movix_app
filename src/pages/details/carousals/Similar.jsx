@@ -1,7 +1,8 @@
 import React from "react";
 
-import Carousel from "../../../components/carousal/Carousal";
+// import Carousel from "../../../components/carousal/Carousal";
 import useFetch from "../../../hooks/useFetch";
+import Carousal from "../../../components/carousal/Carousal"
 
 
 
@@ -11,7 +12,7 @@ const Similar = ({ mediaType, id }) => {
     const title = mediaType === "tv" ? "Similar TV Shows" : "Similar Movies";
 
     return (
-        <Carousel
+        <Carousal
             title={title}
             data={data?.results}
             loading={loading}
